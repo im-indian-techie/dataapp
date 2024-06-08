@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/viewAllFragment">
+
+    <fragment
+        android:id="@+id/myDataFragment"
+        android:name="com.android.dataapp.view.Fragments.MyDataFragment"
+        android:label="fragment_my_data"
+        tools:layout="@layout/fragment_my_data" >
+        <action
+            android:id="@+id/action_myDataFragment_to_viewAllFragment"
+            app:destination="@id/viewAllFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewAllFragment"
+        android:name="com.android.dataapp.view.Fragments.ViewAllFragment"
+        android:label="fragment_view_all"
+        tools:layout="@layout/fragment_view_all" >
+        <action
+            android:id="@+id/action_viewAllFragment_to_myDataFragment"
+            app:destination="@id/myDataFragment" />
+    </fragment>
+
+</navigation>

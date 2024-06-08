@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/viewAllFragment" android:title="View All" android:icon="@drawable/ic_data"/>
+    <item android:id="@+id/myDataFragment" android:title="My Data" android:icon="@drawable/ic_data"/>
+</menu>
